@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=East+Sea+Dokdo&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  
+  height: 100%;
+  
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.montserrat-alternates-medium {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+nav > ul {
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav > ul > li {
+    display: inline-block;
+    height: 40px;
+    padding: 10px 20px;
+    justify-content: space-around;
+}
+
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+  width: 960px; /* Фиксированная ширина контейнера */
+  margin: 0 auto; /* Центрирование контейнера по горизонтали */
+  /* padding: 0 20px; Добавлен внутренних отступов контейнеру */
+  display: flex;
+ height: 100%;
+ 
+  
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+
+
+img.bookImg {
+    width: 250px;
+    height: 300px;
+}
+
+.sidebar { 
+    width: 400px;
+   height: 100%;
+    content: "";
+overflow: scroll;
+    text-align: center;
+}
+
+.catalogueItem {
+    width: 300px;
+    padding: 20px 10px 30px;
+    margin: 20px;
+    box-shadow:4px 4px 15px 8px rgba(34, 60, 80, 0.2);;
+    border-radius: 20px;
+}
+
+
+.main-content {
+    height: auto;
+    width: 560px;
+    text-align: center;
+    
+    overflow: scroll;
+    padding: 20px;
+    margin: 10px;
+    box-shadow:4px 4px 15px 8px rgba(34, 60, 80, 0.2);;
+    border-radius: 20px;
+    
+}
+
+.img450px {
+    width: 450px;
+    height: 500px;
+}
+
+button.Buy{
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 100px;
+    font-weight: bold;
+}
