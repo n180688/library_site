@@ -8,7 +8,8 @@
     <title>библиотека</title>
     
     <link rel="stylesheet" href="../normalize.css">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="mobile_styles.css">
   </head>
   <body class="montserrat-alternates-medium">
     
@@ -16,16 +17,20 @@
       
     <header>
       
+      
+      <img src="../Pictures/book_logo.png" class="header-logo">
           
           
-        <h1>Заголовок сайта</h1>
+        <h1>Библиотека</h1>
         <nav>
+            <div class="nav-menu">
           <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">О нас</a></li>
             <li><a href="#">Контакты</a></li>
             <li> <a href="#">Категории</a></li>
           </ul>
+          </div class="nav-menu">
         </nav>
     </header>
     
@@ -39,7 +44,7 @@
         <div class="catalogueItem">
             
         <div class="itemsPic">
-            <a href="pravo_na_pivo.html"><img  class="bookImg" src="../Pictures/pravonapivo.jpg"></a>
+            <a id="pravo_na_pivo"  onclick="inputPage(this.id)"><img  class="bookImg" src="../Pictures/pravonapivo.jpg"></a>
             </div>
             
             <p><b>«Право на пиво»</b></p>
@@ -47,35 +52,36 @@
         </div>
         
  <div class="catalogueItem">
-            <a href="kakupravlatmirom.html"><img  class="bookImg" src="../Pictures/kakupralvatmirom.jpg"></a>
+            <a id="kakupravlatmirom" 
+         onclick="inputPage(this.id)"><img  class="bookImg" src="../Pictures/kakupralvatmirom.jpg"></a>
             
             <p><b>«Как управлять вселенной, не привлекая внимания санитаров»</b></p>
             
         </div>
         
  <div class="catalogueItem">
-            <a href="ya_ne_loshad.html"><img  class="bookImg" src="../Pictures/yaneloshad.jpg"></a>
+            <a id="yaneloshad" onclick="inputPage(this.id)"><img  class="bookImg" src="../Pictures/yaneloshad.jpg"></a>
             
             <p><b>«Я не лошадь»</b></p>
             
         </div>
         
  <div class="catalogueItem">
-            <a href="durakvsm.html"><img  class="bookImg" src="../Pictures/durakvsm.jpg"></a>
+            <a id="durakvsm" onclick="inputPage(this.id)"><img  class="bookImg" src="../Pictures/durakvsm.jpg"></a>
             
             <p><b>«Дурак космического масштаба»</b></p>
             
         </div>
         
  <div class="catalogueItem">
-            <a href="#"><img  class="bookImg" src="../Pictures/kakjitskoshkoi.jpg"></a>
+            <a id="kakjitskoshkoi" onclick="inputPage(this.id)"><img  class="bookImg" src="../Pictures/kakjitskoshkoi.jpg"></a>
             
             <p><b>«Как жить с кошкой-невротиком»</b></p>
             
         </div>
         
  <div class="catalogueItem">
-            <a href="#"><img  class="bookImg" src="../Pictures/kakupravlrabami.jpg"></a>
+            <a id="kakupravlrabami" onclick="inputPage(this.id)"><img  class="bookImg" src="../Pictures/kakupravlrabami.jpg"></a>
             
             <p><b>«Как управлять рабами»</b></p>
             
@@ -84,7 +90,7 @@
       </div>
 </section>
 
-      <section class="main-content">
+      <section class="main-content" id="Main">
         <h2>Главная</h2>
         <p>Рады вас приветствовать на официальном сайте пока еще не самой лучшей библиотеки с не самым широким ассортиментом книг. <br>
         Ну, что поделаешь. Выбирайте из того, что есть. Приятного чтения! </p>
@@ -93,12 +99,31 @@
     </div>
     
 </div>
+
+<div class="feedback">
+    <h3>Задайте нам вопрос</h3>
+    
+    <form>
+        <input placeholder="Ваше имя:" type="text" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="text" placeholder="Ваш вопрос:" required>
+        <br>
+        <button>Отправить</button>
+    </form>
+    
+</div>
+
+
     
     <footer>
     
         <p>© 2024 Пример сайта. Все права защищены.</p>
+        <p>Разработчик: n180688</p>
+        
+         <img src="../Pictures/book_logo.png" class="footer-logo">
+        
     </footer>
-    
-    
+
+<script src="script.js"></script>
   </body>
 </html>

@@ -6,9 +6,43 @@
 html, body {
   margin: 0;
   padding: 0;
-  
+  box-sizing: border-box;
   height: 100%;
   
+}
+
+.feedback {
+    text-align: center;
+    color: white;
+    background-color:#6d5e61;
+    height: 320px;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    /* background: linear-gradient(90deg, rgba(12,8,82,1) 3%, rgba(137,161,166,0.9854042041556915) 100%);*/
+    
+    background: radial-gradient(circle, rgba(251,144,63,1) 30%, rgba(51,51,51,1) 80%);
+    border: 2px solid black;
+    
+    border-radius: 45px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form > input {
+    height: 40px;
+    margin: 10px;
+    background: rgba(0,0,0,0);
+    color: white;
+    border: 2px inset white ;
 }
 
 h1 {
@@ -22,20 +56,35 @@ h1 {
   font-style: normal;
 }
 
-nav > ul {
+.nav-menu {
     list-style-type:none;
     display: flex;
     flex-direction: row;
+    width: 960px;
+    margin: 0 auto;
 }
 
-nav > ul > li {
+img.header-logo {
+    height: 90%;
+    position: absolute;
+}
+
+img.footer-logo {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.nav-menu > ul > li {
     display: inline-block;
     height: 40px;
     padding: 10px 20px;
     justify-content: space-around;
 }
 
-nav > ul > li > a {
+.nav-menu > ul > li > a {
     color: white;
     text-decoration: none;
 }
@@ -51,12 +100,16 @@ nav > ul > li > a {
 }
 
 header, footer {
+    min-height: 100px;
   background-color: #333;
   color: #fff;
   padding: 10px 0;
+  position: relative;
 }
 
-
+footer {
+    min-height: 150px;
+}
 
 img.bookImg {
     width: 250px;
@@ -75,8 +128,13 @@ overflow: scroll;
     width: 300px;
     padding: 20px 10px 30px;
     margin: 20px;
-    box-shadow:4px 4px 15px 8px rgba(34, 60, 80, 0.2);;
+    box-shadow:4px 4px 15px 8px rgba(34, 60, 80, 0.2);
     border-radius: 20px;
+}
+
+.catalogueItem:hower {
+    border: 10px solid red;
+    box-shadow:4px 4px 15px 8px rgba(34, 60, 80, 0.2);;
 }
 
 
@@ -105,3 +163,4 @@ button.Buy{
     width: 100px;
     font-weight: bold;
 }
+
